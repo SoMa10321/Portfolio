@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ousama Abdel Wahab | Flutter Application Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Tajawal:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="particles-bg" id="particles"></div>
+    <div class="grid-bg"></div>
+
+    <!-- الشريط العلوي -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-code"></i>Ousama Abdel Wahab <span>.</span></a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">communication</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم البطل -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <!-- شبكة متصلة ثلاثية الأبعاد -->
+            <canvas class="network-canvas" id="networkCanvas"></canvas>
+
+            <!-- عناصر زجاجية عائمة -->
+            <div class="glass-element" style="width: 300px; height: 300px; top: 10%; right: 5%; animation-delay: 0s;">
+            </div>
+            <div class="glass-element" style="width: 200px; height: 200px; top: 60%; right: 80%; animation-delay: 2s;">
+            </div>
+            <div class="glass-element" style="width: 150px; height: 150px; top: 30%; right: 70%; animation-delay: 4s;">
+            </div>
+            <div class="glass-element" style="width: 250px; height: 250px; top: 70%; right: 20%; animation-delay: 6s;">
+            </div>
+            <div class="glass-element" style="width: 180px; height: 180px; top: 20%; right: 50%; animation-delay: 8s;">
+            </div>
+
+            <!-- جسيمات متصلة -->
+            <div id="particlesContainer"></div>
+
+            <!-- دوائر متوهجة -->
+            <div class="glow-circle" style="width: 400px; height: 400px; top: -100px; right: -100px;"></div>
+            <div class="glow-circle"
+                style="width: 300px; height: 300px; bottom: -150px; right: -150px; animation-delay: 1s;"></div>
+            <div class="glow-circle" style="width: 200px; height: 200px; top: 50%; right: 60%; animation-delay: 2s;">
+            </div>
+
+            <!-- موجات عصرية -->
+            <div class="modern-wave"></div>
+            <div class="modern-wave"></div>
+            <div class="modern-wave"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line">
+                        <span class="terminal-command">$</span> <span>whoami</span>
+                    </div>
+                    <div class="terminal-line terminal-output">
+                        Ousama Abdel Wahab - Flutter Developer
+                    </div>
+                    <div class="terminal-line">
+                        <span class="terminal-command">$</span> <span>ls -la /skills</span>
+                    </div>
+                    <div class="terminal-line terminal-output">
+                        dart, flutter, firebase, api-integration
+                    </div>
+                </div>
+            </div>
+
+            <h1>Flutter Application Developer</h1>
+            <p>I build high-performance mobile applications with seamless user interfaces and exceptional user
+                experiences. I specialize in Flutter with experience in Firebase and API integration.</p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button">Project presentations</a>
+                <a href="#contact" class="secondary-button">Contact me</a>
+            </div>
+        </div>
+
+        <div class="code-animation">
+            <div class="code-line" style="top: 10%; animation-delay: 0s;">const app = MaterialApp(home: MyApp());</div>
+            <div class="code-line" style="top: 20%; animation-delay: 2s;">class MyApp extends StatelessWidget { ... }
+            </div>
+            <div class="code-line" style="top: 30%; animation-delay: 4s;">Firebase.initializeApp();</div>
+            <div class="code-line" style="top: 40%; animation-delay: 6s;">await api.fetchData();</div>
+            <div class="code-line" style="top: 50%; animation-delay: 8s;">setState(() { _data = response; });</div>
+            <div class="code-line" style="top: 60%; animation-delay: 10s;">Container(decoration: BoxDecoration(...));
+            </div>
+            <div class="code-line" style="top: 70%; animation-delay: 12s;">Navigator.push(context, route);</div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/الدليل الرقمي.png" alt="تطبيق الدليل الرقمي">
+                </div>
+                <div class="project-info">
+                    <h2>Digital guide application (Special for Aoun Association)</h2>
+                    <p>Collaborating with the team in implementing Firebase authentication and data management, while
+                        contributing to the design and development of all user interfaces.</p>
+                    <a href="https://play.google.com/store/apps/details?id=sa.awonteck.digital"
+                        class="project-link">Project presentation</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/EasyPay Logo-01.png" alt="تطبيق Easypay">
+                </div>
+                <div class="project-info">
+                    <h3>EasyPay Application (developed for EasyPay Company)</h3>
+                    <p>Easy Pay application interfaces were designed, with API integration as a core component of the
+                        development process.
+                    </p>
+                    <a href="https://easypay.sa" class="project-link">Project presentation</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80"
+                        alt="تطبيق Helpings Needlys">
+                </div>
+                <div class="project-info">
+                    <h3>Helpings Needlys</h3>
+                    <p>As a developer, I contributed to the graduation project, and participated in the design and
+                        implementation of the application's main features.</p>
+                    <!-- <a href="#" class="project-link">Project presentation</a> -->
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1139&q=80"
+                        alt="تطبيق الأسر المنتجة">
+                </div>
+                <div class="project-info">
+                    <h3>Productive families application</h3>
+                    <p>As a developer, I contributed to this application, using Firebase for backend services and Figma
+                        for user interface, user experience, and prototyping.</p>
+                    <!-- <a href="#" class="project-link">Project presentation</a> -->
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="تطبيق حاسبة العمر">
+                </div>
+                <div class="project-info">
+                    <h3>Birthday Calculator application</h3>
+                    <p>Developed a personal application as part of my learning and skill development process.</p>
+                    <a href="https://github.com/SoMa-10/calculator-App" class="project-link">Project presentation</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="مكتبة Flutter">
+                </div>
+                <div class="project-info">
+                    <h2>My library in Flutter pub.dev (SimpleTextWidget) </h2>
+                    <p>SimpleTextWidget is a ready-to-use widget based on AutoSizeText that provides a rich and highly
+                        customizable text experience in Flutter apps.</p>
+                    <a href="https://pub.dev/packages/simple_text_widget" class="project-link" target="_blank">Library
+                        Showcase</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Technical skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="assets/icon_flutter 1-2.svg" alt="skill-icon">
+                    <i class=""></i>
+                </div>
+                <h3>Flutter</h3>
+                <p>A framework for developing cross-platform applications featuring highly accurate and responsive user
+                    interfaces.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Dart</h3>
+                <p>The primary programming language for developing Flutter applications.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3>Firebase</h3>
+                <p>Database, authentication, and backend servers.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3>API Integration</h3>
+                <p>Integrating external APIs.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>App Publishing</h3>
+                <p>Publishing apps on Google Play and the App Store.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Designing user interfaces using Figma.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <h3>Git</h3>
+                <p>Publication management and teamwork.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security</h3>
+                <p>Securing applications and protecting data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+        <h2 class="section-title animate-title">Contact Me</h2>
+
+        <div class="contact-info animate-fade">
+            <p>
+                Do you have an app idea? Let's bring it to life — I'm open to new and exciting projects.
+            </p>
+
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="contact-item animate-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>osmaa10321@gmail.com</span>
+                    </div>
+
+                    <div class="contact-item animate-item" style="animation-delay: 0.15s">
+                        <i class="fas fa-phone"></i>
+                        <span>0530196610</span>
+                    </div>
+
+                    <div class="contact-item animate-item" style="animation-delay: 0.3s">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Saudi Arabia - Makka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- التذييل -->
+    <footer>
+        <div class="footer-content">
+            <!-- class="logo"><i class="fas fa-code"></i> -->
+            <div class="footer-logo">Ousama Abdel Wahab<span>.</span></div>
+
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">communication</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/اسامة-عبد-الوهاب-b51324266/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/SoMa10321" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://pub.dev/packages/simple_text_widget" target="_blank"><i class="fas fa-box"></i></a>
+            </div>
+
+            <p class="copyright">2025 Osama Abdel Wahab | Flutter Application Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
