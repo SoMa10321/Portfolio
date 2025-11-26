@@ -112,7 +112,7 @@ class ProjectsSection extends StatelessWidget {
                         childAspectRatio: childAspectRatio,
                         mainAxisExtent: screenWidth > 900 ? 500 : 470,
                       ),
-                      itemCount: 6,
+                      itemCount: ListProjects.instance.getProjects().length,
                       itemBuilder: (context, index) =>
                           ProjectCard(index: index),
                     );

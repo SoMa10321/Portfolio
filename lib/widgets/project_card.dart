@@ -12,7 +12,7 @@ class ProjectCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final projects = _getProjects();
+    final projects = ListProjects().getProjects();
 
     return Container(
       decoration: BoxDecoration(
@@ -118,7 +118,45 @@ class ProjectCard extends StatelessWidget {
     );
   }
 
-  List<Map<String, dynamic>> _getProjects() {
+  void _handleProjectAction(String action) {
+    switch (action) {
+      case 'EasyPay':
+        _launchUrl(
+          'https://play.google.com/store/apps/details?id=com.easyerps.easypay',
+        );
+        break;
+      case 'Digital guide':
+        _launchUrl(
+          'https://play.google.com/store/apps/details?id=sa.awonteck.digital',
+        );
+        break;
+      case 'Birthday Calculator':
+        _launchUrl('https://github.com/SoMa-10/calculator-App');
+        break;
+      case 'My library in Flutter pub.dev':
+        _launchUrl('https://pub.dev/packages/simple_text_widget');
+        break;
+    }
+  }
+
+  Future<void> _launchUrl(String url) async {
+    final Uri uri = Uri.parse(url);
+    try {
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri);
+      }
+    } catch (e) {
+      log('Could not launch $url: $e');
+    }
+  }
+}
+
+class ListProjects {
+  ListProjects._internal();
+  static final ListProjects instance = ListProjects._internal();
+  factory ListProjects() => instance;
+
+  List<Map<String, dynamic>> getProjects() {
     return [
       {
         'title': 'EasyPay Application (developed for EasyPay Company)',
@@ -191,37 +229,5 @@ class ProjectCard extends StatelessWidget {
         'action': 'My library in Flutter pub.dev',
       },
     ];
-  }
-
-  void _handleProjectAction(String action) {
-    switch (action) {
-      case 'EasyPay':
-        _launchUrl(
-          'https://play.google.com/store/apps/details?id=com.easyerps.easypay',
-        );
-        break;
-      case 'Digital guide':
-        _launchUrl(
-          'https://play.google.com/store/apps/details?id=sa.awonteck.digital',
-        );
-        break;
-      case 'Birthday Calculator':
-        _launchUrl('https://github.com/SoMa-10/calculator-App');
-        break;
-      case 'My library in Flutter pub.dev':
-        _launchUrl('https://pub.dev/packages/simple_text_widget');
-        break;
-    }
-  }
-
-  Future<void> _launchUrl(String url) async {
-    final Uri uri = Uri.parse(url);
-    try {
-      if (await canLaunchUrl(uri)) {
-        await launchUrl(uri);
-      }
-    } catch (e) {
-      log('Could not launch $url: $e');
-    }
   }
 }
