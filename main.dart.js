@@ -62011,7 +62011,7 @@ case"email":s.iQ("mailto:osmaa10321@gmail.com")
 break
 case"linkedin":s.iQ("https://www.linkedin.com/in/\u0627\u0633\u0627\u0645\u0629-\u0639\u0628\u062f-\u0627\u0644\u0648\u0647\u0627\u0628-b51324266/")
 break
-case"github":s.iQ("https://github.com/soma10321")
+case"github":s.iQ("https://github.com/SoMa10321/Portfolio/tree/code-flutter")
 break}},
 iQ(a){return this.WI(a)},
 WI(a){var s=0,r=A.S(t.H),q=1,p=[],o,n,m,l
