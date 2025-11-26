@@ -143,7 +143,7 @@ class _ContactCardState extends State<ContactCard> {
         _launchUrl('https://www.linkedin.com/in/اسامة-عبد-الوهاب-b51324266/');
         break;
       case 'github':
-        _launchUrl('https://github.com/soma10321');
+        _launchUrl('https://github.com/SoMa10321/Portfolio/tree/code-flutter');
         break;
     }
   }
